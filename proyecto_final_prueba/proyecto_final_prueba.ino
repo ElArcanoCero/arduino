@@ -3,7 +3,7 @@
 
 const int led = 2;                                       // brillo led
 
-#define DEVICE  "esp32-1"                                  // nombre dispositivo en ubidots
+#define DEVICE  "esp32-1"                                // nombre dispositivo en ubidots
 #define TOKEN  "BBFF-9K4rFJ4V24mFwJilEYTGHkYQbicJat"     // token BBFF-9K4rFJ4V24mFwJilEYTGHkYQbicJat
 #define WIFISSID "ARKANO2020"                            // nombre red wifi
 #define PASSWORD "Motoso201611"                          // clave del wifi
@@ -13,7 +13,7 @@ Ubidots client(TOKEN);                                   //conecta a la direncio
 
 
 void setup(void) {
-client.wifiConnect(WIFISSID, PASSWORD);              //inicia cliente ubidots
+client.wifiConnect(WIFISSID, PASSWORD);                  //inicia cliente ubidots
 Serial.begin(115200);
 Serial.print(" hola mundo \n");
 pinMode(led, OUTPUT);
